@@ -1,1 +1,6 @@
 librealsese/
+object_detection/
+scripts/output/
+scripts/aligned.py
+scripts/calibration.py
+scripts/interactive_color_filter.py

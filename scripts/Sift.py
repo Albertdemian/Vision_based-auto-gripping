@@ -87,8 +87,8 @@ try:
                 new_dst = dst
                 print(new_dst)
                             #counter = 0
-            # Stack both images horizontally
-            print(dst[0][0][0])
+            
+            print(dst[0][0][0], len(dst))
             print(rs.depth_frame.get_distance(depth_frame, 5, 5) )
             
         
@@ -97,6 +97,7 @@ try:
             print(type(inst))
             pass 
         
+        # Stack both images horizontally
         images = np.hstack((color_image, depth_colormap))
         # Show images
         cv2.namedWindow('RealSense', cv2.WINDOW_AUTOSIZE)
